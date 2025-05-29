@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 217 100% 96%; /* Light desaturated sky blue #EAF4FF */
+    --foreground: 217 30% 25%; /* Dark grayish blue for text */
+
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 217 30% 25%; /* Dark grayish blue */
+
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 217 30% 25%; /* Dark grayish blue */
+
+    --primary: 208 100% 70%; /* Saturated sky blue #63B5FF */
+    --primary-foreground: 217 30% 15%; /* Darker blue for text on primary */
+
+    --secondary: 217 100% 90%; /* Lighter shade of background for secondary elements */
+    --secondary-foreground: 217 30% 20%; /* Darker blue for text on secondary */
+
+    --muted: 217 50% 90%; /* Muted version of background */
+    --muted-foreground: 217 30% 45%; /* Muted text color */
+
+    --accent: 233 100% 70%; /* Vibrant, slightly purpled blue #6377FF - for CTA buttons */
+    --accent-foreground: 0 0% 100%; /* White for text on accent buttons */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 208 100% 85%; /* Lighter shade of primary for borders */
+    --input: 0 0% 100%; /* White background for input fields */
+    --ring: 208 100% 60%; /* Slightly darker shade of primary for focus rings */
+
+    --radius: 0.5rem;
+
+    --chart-1: 208 100% 65%;
+    --chart-2: 233 100% 65%;
+    --chart-3: 200 100% 65%;
+    --chart-4: 215 100% 65%;
+    --chart-5: 190 100% 65%;
+  }
+
+  .dark {
+    --background: 217 30% 10%; /* Dark blue */
+    --foreground: 217 100% 90%; /* Light grayish blue */
+
+    --card: 217 30% 15%; /* Slightly lighter dark blue for cards */
+    --card-foreground: 217 100% 90%;
+
+    --popover: 217 30% 15%;
+    --popover-foreground: 217 100% 90%;
+
+    --primary: 208 100% 60%; /* Slightly less bright Saturated sky blue */
+    --primary-foreground: 217 30% 10%; /* Dark blue for text on primary */
+
+    --secondary: 217 30% 20%; /* Darker shade for secondary elements */
+    --secondary-foreground: 217 100% 85%; /* Lighter blue for text on secondary */
+
+    --muted: 217 30% 25%;
+    --muted-foreground: 217 100% 70%;
+
+    --accent: 233 100% 60%; /* Slightly less bright Vibrant, slightly purpled blue */
+    --accent-foreground: 0 0% 98%; /* Almost White */
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 208 100% 40%; /* Darker shade of primary for borders */
+    --input: 217 30% 20%;
+    --ring: 208 100% 70%;
+    
+    --chart-1: 208 100% 55%;
+    --chart-2: 233 100% 55%;
+    --chart-3: 200 100% 55%;
+    --chart-4: 215 100% 55%;
+    --chart-5: 190 100% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-geist-sans), sans-serif;
+  }
+}
